@@ -75,7 +75,7 @@ img {
     position: relative;
     width: 250px;
     height: 250px;
-    margin: 5% 0 0 7%;
+    margin: 2% 0 0 43%;
 }
 .profile .border {
     position: absolute;
@@ -95,8 +95,8 @@ img {
     font-size: 3em;
     color: white;
     font-family: var(--font-profile-head);
-    top: 9%;
-    left: 22%;
+    top: 26%;
+    left: 42.8%;
     width: var(--size-width-profile-name);
     height: var(--size-height-profile-name);
     border: 2px solid var(--without-color);
