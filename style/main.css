@@ -1,3 +1,57 @@
+:root {
+    --without-color: transparent;
+
+}
+
+/* ANIMATIONS */
+
+@keyframes circle-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ELEMENTS OF BODY */
 body {
     background-image: linear-gradient(to left, #97a8af, #0f2e3b);
 }
+
+/* HEAD */
+
+img {
+    position: relative;
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    margin: 3% 0 0 2.7%;
+}
+.profile {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 5% 0 0 10%;
+}
+.profile .border {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--without-color);
+    border-radius: 50%;
+    border: 6px solid rgb(175, 175, 175);
+    border-left-color: #00cc99;
+
+    animation: circle-rotate 4s linear infinite;
+}
+
+
+/* BOX */
+
+
+/* MAIN CONTENT */
