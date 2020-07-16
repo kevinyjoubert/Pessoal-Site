@@ -3,6 +3,8 @@
     --font-profile-head: 'ShadowsIntoLight-Regular';
     --border-color-profile: #00cc99;
     --border-profile-name: white;
+    --size-width-profile-name: 265px;
+    --size-height-profile-name: 62px;
 }
 
 /* FONT */
@@ -41,7 +43,7 @@
     }
 
     to {
-        width: 267px;
+        width: var(--size-width-profile-name);
     }
 }
 @keyframes border-blink-profile-name {
@@ -96,14 +98,14 @@ img {
     position: absolute;
     top: 9%;
     left: 22%;
-    width: 267px;
-    height: 62px;
+    width: var(--size-width-profile-name);
+    height: var(--size-height-profile-name);
     border: 2px solid var(--without-color);
     border-right-color: var(--border-profile-name);
     overflow: hidden;
     white-space: nowrap;
-    animation: border-blink-profile-name .8s ease-out infinite,  
-               border-typing-profile-name 2s linear;
+    animation: border-blink-profile-name .8s ease-in infinite,  
+               border-typing-profile-name 2.5s ease-out;
 }
 
 
