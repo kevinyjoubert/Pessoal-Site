@@ -1,17 +1,36 @@
 :root {
     --without-color: transparent;
+    --font-profile-head: 'ShadowsIntoLight-Regular';
+    --border-color-profile: #00cc99;
+}
 
+/* FONT */
+
+@font-face {
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+    font-family: 'ShadowsIntoLight-Regular';
 }
 
 /* ANIMATIONS */
 
-@keyframes circle-rotate {
-    from {
+@keyframes circle-rotate-profile {
+    0% {
         transform: rotate(0deg);
+        border-color: var(--without-color);
+    }
+    
+    15% {
+        transform: rotate(80deg);
+        border-left-color: var(--border-color-profile);
     }
 
-    to {
+    85% {
+        transform: rotate(270deg);
+    }
+
+    100% {
         transform: rotate(360deg);
+        border-color: var(--without-color);
     }
 }
 
@@ -34,7 +53,7 @@ img {
     position: relative;
     width: 250px;
     height: 250px;
-    margin: 5% 0 0 10%;
+    margin: 5% 0 0 7%;
 }
 .profile .border {
     position: absolute;
@@ -44,10 +63,24 @@ img {
     right: 0;
     background-color: var(--without-color);
     border-radius: 50%;
-    border: 6px solid rgb(175, 175, 175);
+    border: 6px dashed var(--without-color);
     border-left-color: #00cc99;
 
-    animation: circle-rotate 4s linear infinite;
+    animation: circle-rotate-profile 4s linear infinite;
+}
+
+.profile-name {
+    font-family: var(--font-profile-head);
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    top: 9%;
+    left: 22%;
+    width: 267px;
+    height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 
 
