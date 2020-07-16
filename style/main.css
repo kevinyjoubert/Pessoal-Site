@@ -57,7 +57,7 @@
 }
 
 
-/* ELEMENTS OF BODY */
+/* BODY OF PROJECT */
 body {
     background-image: linear-gradient(to left, #97a8af, #0f2e3b);
 }
@@ -87,15 +87,14 @@ img {
     border-radius: 50%;
     border: 6px dashed var(--without-color);
     border-left-color: #00cc99;
-
     animation: circle-rotate-profile 4s linear infinite;
 }
 
 .profile-name {
-    font-family: var(--font-profile-head);
+    position: absolute;
     font-size: 3em;
     color: white;
-    position: absolute;
+    font-family: var(--font-profile-head);
     top: 9%;
     left: 22%;
     width: var(--size-width-profile-name);
